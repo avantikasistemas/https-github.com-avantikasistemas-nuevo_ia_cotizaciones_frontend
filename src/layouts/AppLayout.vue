@@ -33,20 +33,22 @@ const pageTitle = computed(() => PAGE_TITLES[route.name] ?? '')
 <style scoped>
 .app-layout {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   background: #f9fafb;
 }
 
 .app-main {
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  min-width: 0;
   overflow: hidden;
 }
 
 .app-content {
   flex: 1;
+  min-height: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
